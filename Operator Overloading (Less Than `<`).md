@@ -22,10 +22,27 @@ To write a Python program that demonstrates **operator overloading** by overload
 4. **Use `<` Operator**:
    - Use `print(ob1 < ob2)` to trigger the overloaded behavior.
 
+
 ---
 
 ## 💻 Program
+```
+class A:
+    def __init__(self,a):
+        self.a=a
+    def __lt__(self,other):
+        return self.a<other.a
+ob1 = A(2)
+
+ob2 = A(3)
+if ob2<ob1:
+    print("ob2 is less than ob1")
+else:
+    print("ob1 is less than ob2")
+```
 
 ## Output
+<img width="242" height="114" alt="6d" src="https://github.com/user-attachments/assets/e023aed5-c428-4615-ad54-a67ea4b89bdd" />
 
 ## Result
+Thus the Python program that demonstrates **operator overloading** by overloading the **less than (`<`)** operator using a custom class is done and output is verified
